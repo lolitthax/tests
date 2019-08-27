@@ -1,0 +1,602 @@
+/*estilizações  "universais"*/
+/*as estilizações universais são seletores utilizados em grande parte das páginas
+como por exemplo as estilizações do rodapé e menu, que irão aparecer em todas as páginas*/
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+/* estilização do cabeçalho da página*/
+header{
+     background-color: white;
+     height: 100px;
+     border-color: rgba(183, 247, 88, 0.856);
+     border-width: 1.5px;
+     border-style: solid;
+     /*para esconder a borda da esquerda*/
+     border-left-style: hidden;
+     /*para esconder a borda da esquerda*/
+     border-right-style: hidden;
+     display: flex;
+     justify-content: left;
+   
+}
+
+/* estilização do menu*/
+
+/*estilização para ajustar o logotipo*/
+.logo{
+    margin: 15px 140px;
+}
+
+/*ajuste no menu*/
+.menu{
+     margin:0  135px;
+   
+}
+
+/*joga o menu para direita usando o flex*/
+.push{
+    margin-left: auto;
+}
+
+/* itens de navegação e seus respectivos ajustes*/
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 2px;
+    float: right;
+    padding: 7px;
+    line-height: 30px;
+    margin-top: 40px;
+
+}
+/*na classe ativo os elementos de menu que forem selecionados deverão ficar com uma cor de fundo*/
+.ativo{
+    background-color: rgba(183, 247, 88, 0.856);
+}
+/*ao passar o cursor sobre os menus, eles deverão mudar de cor, para isso usamos o hover
+o transition serve para fazer uma transição mais suave quando o cursor passar pelos liks*/
+.menu a:hover{
+    background-color: rgba(183, 247, 88, 0.856);
+    transition: 600ms;
+}
+
+
+
+/* css do rodapé */
+
+/*cor, largura e altura*/
+footer{
+    background-color: rgba(183, 247, 88, 0.856);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    height: 300px;
+}
+
+.footer{
+    width: 94.5%;
+    display: flex;
+    justify-content: space-around;
+}
+/*ajuste no estilo do subtítulo do rodapé*/
+.itens-rodape h2{
+    text-align: left;
+    font-size: 14px;
+    padding: 9px;
+    margin: 30px 3px 3px;
+}
+
+.center{
+    text-align: center;
+}
+/*ajustes nos itens do rodapé*/
+.itens-rodape a{
+    font-size: 18px;
+    line-height: 1.8;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.icones{
+    margin-top: 30px;
+   
+}
+
+/*ícones dos cartões e seu espaçamento*/
+.itens-rodape img{
+    margin:  0 ;
+}
+
+/*A classe clear foi utilizada para "limpar" a propriedade float*/
+.clear{
+    clear: both;
+}
+
+/*a classe que alinha as imagens das páginas, o margin é  especial das páginas SOBRE/ABOUT e index.html*/
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:50px;
+}
+
+/*os textos da classe item ficam alinhados ao centro*/
+.imagem p {
+    text-align: center;
+color: black;
+     
+}
+.imagem a{
+    text-decoration: none;
+}
+/* margin das imagens da página inicial e sobre/about*/
+.imagem{
+    margin: 0 10px;
+}
+
+/*todos os forms terão a mesma configuração de borda e altura*/
+button{
+    border-radius: 10px;
+    height: 30px;
+   
+}
+
+
+/* Aqui começamos o CSS da página inicial*/
+
+/*Carrosel*/
+/*Foi utilizaod um framework de JS, tirando as imagens, ele já veio pronto*/
+/*O professor Erick disse que está tudo bem em  utilizar*/
+.carousel {
+  background: #EEE;
+  height: 700px;
+  width: 1300px;
+  margin:0 auto;
+  margin-top: 10px; 
+}
+.carousel img {
+  display: block;
+}
+
+/* classes da tag <hr>*/
+/*linha da esquerda*/
+ .hr-e{
+    border-color:  rgba(183, 247, 88, 0.856);
+    width: 40%;
+    float: left;
+    margin:30px;
+}
+/*linha da direita*/
+.hr-d{
+    border-color:  rgba(183, 247, 88, 0.856);
+    width: 40%;
+    float: right;
+    margin:30px;
+}
+
+/* estilização do título entre as linhas*/
+.favorito h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top:50px;
+    
+}
+
+/*estilização da classe form de Novidades*/
+.info{
+    text-align: center;
+}
+
+.form{
+    background-color:#B22222;
+    margin: 140px;
+    text-align: left;
+}
+/*configuração do input do formulário de Novidades*/
+.form input{
+    border-radius: 10px;
+    width: 20%;
+    height: 30px; 
+    margin: 5px;  
+}
+
+/*configuração da label do formulário de Novidades*/
+.form label{
+    margin: 3px;
+    line-height: 50px;
+}
+/*configuração da cor de preenchimento e da borda do formulário de Novidades*/
+.form button{
+    margin: 20px;
+    background-color:#3CB371;
+    border-color:#3CB371;
+    height: 50px;
+    width: 10%;
+    font-weight: bolder;
+}
+
+
+
+ /* Título do formulário*/
+.form h2{
+    text-align: center ;
+    color: white;
+    font-size: 2.5rem;
+   
+}
+
+/*texto do formulário de Novidades*/
+.form p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+/*Página Sobre/About */
+
+/*Título do texto da página*/
+h1{ 
+    text-align: center;
+    margin: 30px 0 45px 0;
+    font-size: 2rem;
+
+}
+/*Estilização do subtítulo*/
+h2{
+    text-align: center;
+    margin: 30px 0 45px 0;
+    font-size: 2rem;
+
+}
+/*hiperlink de tradução*/
+.traducao{
+    display: flex;
+    justify-content:center;
+    
+}
+/*alinhar a imagem e texto*/
+.sobre{
+    display: flex;
+    justify-content: space-around;
+}
+/*Texto da direita e suas configurações*/
+.textoR{
+    margin-right: 4%;
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Times New Roman',serif;
+    color:#000000 
+}
+/*texto da esquerda*/
+.textoL{
+    margin-left: 4%;
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Times New Roman',serif;
+    color:#000000; 
+}
+/*classes dos ícones loja e pet*/
+.adote{
+    height: 128px; 
+    width: 128px; 
+    margin-right: 5%;
+    margin-top: 40px;
+}
+
+
+
+.pet{
+    height: 256px;
+    width: 256px;
+    margin-left: 6%;
+ }
+
+ .pet2{
+     margin-top: 23.5px;
+     margin-left: 9.5%;
+     width: 128px;
+     height: 128px;
+ }
+
+
+/*Página de adoção*/
+
+ 
+/* Na página de adoções utilizamos a classe número na tag <a>
+para nos levar a outras páginas*/
+
+
+/* Banner texto pesquisavel  */
+.ban{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.ima{
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: url(../imagens/imagens_adocao/i.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.ima p{
+    margin-top: 150px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.ima2{
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: url(../imagens/imagens_adocao/a.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 70%;
+    height: 500px;
+}
+.ima2 p{
+    margin-top: 200px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+.ima3{
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: url(../imagens/imagens_adocao/n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
+    height: 500px;
+ 
+}
+.ima3 h1{
+    margin-top: 150px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+.ima3 p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 30px;
+}
+/*a classe ".imagens" serve para dar a margem nas imagens da página de Adoção*/
+/*ela utiliza a classe "item", que é importante lembrar que a classe já tem um espaçamento de 50px
+ou seja:  o espaçamento de 50px da classe "item" vai para cime e baixo da imagem, a e o 30px para os lados*/
+.imagens p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    
+}
+.imagens a{
+    text-decoration: none;
+}
+.imagens{
+    margin:  30px;
+}
+/* a tag numero aos links numéricos que se encontram abaixo dos animais e produtos, eles nos levam para
+outras páginas*/
+.numero a{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 3px;
+    color: black
+}
+/*quando passarmos o mouse por cima dos links eles mudarão de cor*/
+.numero a:hover{
+    background-color: rgb(67, 107, 7);
+    color: white;
+}
+
+/*esta classe faz a mesma coisa que a classe ativo dos menus de navegação do cabeçalho*/
+.numeroAtivo{
+    background-color: rgb(67, 107, 7);
+}
+
+
+/* Aqui começamos a página de produtos */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 550px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  /*imagens dos produtos dento da "caixa" de produto*/
+  .card img{
+      margin: 20px;
+  }
+  /*preço*/
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  /*O botão da caixa de produtos*/
+  .card button {
+      /*sem borda*/
+    border: none;
+    /*sem contorno*/
+    outline: 0;
+    /*espaçamento dentro d acaixa*/
+    padding: 12px;
+    color: white;
+    background-color:rgb(67, 107, 7);
+    text-align: center;
+    /*especifica o cursor do mouse quando o ponteiro do mouse está sobre um elemento*/
+    cursor: pointer;
+    width: 70%;
+    height: 40px;;
+    font-size: 18px;
+  }
+  /*cor do botão de adicionar ao carrinho*/
+  .corbotao button{
+    background-color: #B22222;
+}
+
+  /*a propriedade hover serve para mudar a cor quando passamos o mouse no elemento*/
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+
+/*Aqui começamos a página de contato*/
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.conteudo{
+    margin: 8px 40px 80px;
+    background-color: white;
+    width: 70%;
+    height: 500px;
+}
+.formulario {
+    border:solid 2px #000000;
+    padding: 15px;
+    margin: 0 auto;
+    width: 500px;
+}
+/*Aqui ao invés de estilizar as propriedades pela classe
+ utilizamos o "id"(que tbm é usado no javascript)
+ é importante lebrar que as classes estilizam mais de 1 elemento, enquanto o ID apenas 1*/
+#Nome{
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 47px;
+    width: 300px;
+ 
+} 
+#Email{
+    border-radius: 10px;
+    padding: 5px;
+    margin-left:45px;
+    width: 300px;
+  
+}
+#Assunto{
+    border-radius: 10px ;
+    padding: 5px;
+    margin-left: 33px;
+    width: 300px;
+  
+}
+#mensagem{
+
+    border-radius: 10px;
+}
+#msg{
+    font-size: 18px;
+    margin-left: 100px;
+}
+#botao{
+    margin-left: 100px;
+    background-color: rgb(15, 112, 75);
+    color: white;
+    border-color: rgb(15, 112, 75);
+}
+.conteudo label {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+}
+
+.error{
+    color: red;
+}
+.sucesso{
+    color: green;
+}
+
+
+/* Página de Login*/
+/*estilização da tag <hr> do login*/
+
+.linhalogin {
+    border-color:  rgba(183, 247, 88, 0.856);
+    width: 90%;
+}
+
+/*classe do form*/
+.carduser{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+/*imagem*/
+.carduser img{
+    margin: 10px;
+}
+/*botão do form de login*/
+.carduser button {
+    /*sem borda*/
+  border: none;
+  /*sem contorno*/
+  outline: 0;
+  /*espaçamento dentro d acaixa*/
+  padding: 12px;
+  color: white;
+  background-color:rgb(67, 107, 7);
+  text-align: center;
+  /*especifica o cursor do mouse quando o ponteiro do mouse está sobre um elemento*/
+  cursor: pointer;
+  width: 70%;
+  height: 40px;;
+  font-size: 18px;
+}
+
+.carduser input{
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px;
+}
+.carduser label{
+    font-size: 20px;
+}
+#name{
+    width: 80%;
+}
+#e-mail{
+    width: 90%;
+}
+/*link de cadastro*/
+.carduser a{
+color: blue;
+margin:10px;
+}
+
+
+
+
+
+
+
